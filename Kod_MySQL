@@ -23,7 +23,27 @@ DELETE FROM billing
 WHERE 'payer_email' = '' OR 'recipient_email' = '';
 
 Задание №5
+USE project_simple;
 
+SELECT COUNT(1) FROM project
+
+Задание №6
+USE project_simple;
+
+SELECT category, COUNT(product_name) FROM store GROUP BY category
+
+Задание №7
+USE store_simple;
+
+SELECT category, SUM(price * sold_num) FROM store 
+GROUP BY category 
+ORDER BY result DESC
+LIMIT 5;
+
+Задание №8
+USE project_simple;
+
+SELECT COUNT(project_name), SUM(budget), AVG(datediff(project_start, project_finish)) FROM project
 
 
 
