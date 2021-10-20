@@ -1,1 +1,29 @@
+Задание №1
+USE billing_simple;
+
+SELECT * FROM billing WHERE payer_email = 'vasya@mail.com'
+
+
+Задание №2
+USE billing_simple;
+
+INSERT INTO billing (payer_email, recipient_email, sum, currency, billing_date, comment)
+VALUES ('pasha@mail.ru', 'katya@mail.com', '300.00', 'EUR', '14-02-2016', 'Valentimes day present)')
+
+Задание №3
+USE billing_simple;
+
+UPDATE billing SET payer_email = 'alex@mail.com'
+WHERE 'payer_email' = 'egor@mail.com'
+
+Задание №4
+USE billing_simple;
+
+DELETE FROM billing
+WHERE 'payer_email' = '' OR 'recipient_email' = '';
+
+Задание №5
+
+
+
 
